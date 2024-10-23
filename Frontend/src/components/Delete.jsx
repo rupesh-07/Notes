@@ -13,7 +13,9 @@ const Delete = () => {
   const handleDeleteUser = async () => {
     setLoading(true);
     try {
-      const response = await axios.delete(`http://localhost:5000/notes/${id}`);
+      const response = await axios.delete(
+        `https://notes-a5k0.onrender.com/notes/${id}`
+      );
       toast.success("Note Deleted Successfully");
       navigate("/");
     } catch (error) {
