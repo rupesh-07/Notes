@@ -16,7 +16,10 @@ export const Update = () => {
     const fetchNote = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5000/notes/${id}`);
+        // const response = await axios.get(`http://localhost:5000/notes/${id}`);
+        const response = await axios.get(
+          `https://notes-a5k0.onrender.com/notes/${id}`
+        );
         const note = response.data.note;
         setText(note.text);
         setCategory(note.category);
