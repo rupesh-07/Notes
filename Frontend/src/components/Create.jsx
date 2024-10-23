@@ -3,7 +3,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import "./Create.css";
-import BackButton from "./backButton";
+import BackButton from "./BackButton";
 
 export const Create = () => {
   const [text, setText] = useState("");
