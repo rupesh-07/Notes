@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Delete.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-hot-toast";
-import BackButton from "./backButton";
+import BackButton from "./BackButton";
 
 const Delete = () => {
   const { id } = useParams();

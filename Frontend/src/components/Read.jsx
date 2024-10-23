@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Read.css";
 import { useEffect, useState } from "react";
-import BackButton from "./backButton";
+import BackButton from "./BackButton";
 
 export const Read = () => {
   const { id } = useParams();

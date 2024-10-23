@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-hot-toast";
-import BackButton from "./backButton";
+import BackButton from "./BackButton";
 
 export const Update = () => {
   const { id } = useParams();
