@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.notes-title {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #4a4a4a;
+}
+
+.create-btn-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.create-note-btn {
+  text-decoration: none;
+  color: blueviolet;
+  background-color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid blueviolet;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.create-note-btn:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.no-notes {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.notes-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.note-item {
+  width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.note-actions a {
+  color: rgb(88, 63, 114);
+}
+.note-actions a:hover {
+  color: rgb(161, 47, 206);
+}
