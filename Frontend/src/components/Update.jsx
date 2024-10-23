@@ -35,8 +35,12 @@ export const Update = () => {
 
     try {
       const data = { text, category };
+      // const response = await axios.put(
+      //   `http://localhost:5000/notes/${id}`,
+      //   data
+      // );
       const response = await axios.put(
-        `http://localhost:5000/notes/${id}`,
+        `https://notes-a5k0.onrender.com/notes/${id}`,
         data
       );
       toast.success("Note Updated Successfully");

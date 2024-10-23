@@ -18,7 +18,10 @@ export const Home = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/notes`);
+        // const response = await axios.get(`http://localhost:5000/notes`);
+        const response = await axios.get(
+          `https://notes-a5k0.onrender.com/notes`
+        );
         setNotes(response.data.notes);
       } catch (error) {
         setError("Failed to fetch notes: " + error.message);
