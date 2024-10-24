@@ -20,7 +20,7 @@ export const Home = () => {
       try {
         // const response = await axios.get(`http://localhost:5000/notes`);
         const response = await axios.get(
-          `https://notes-a5k0.onrender.com/notes`
+          `https://notes-backend-z097.onrender.com/notes`
         );
         setNotes(response.data.notes);
       } catch (error) {

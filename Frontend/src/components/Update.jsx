@@ -18,7 +18,7 @@ export const Update = () => {
       try {
         // const response = await axios.get(`http://localhost:5000/notes/${id}`);
         const response = await axios.get(
-          `https://notes-a5k0.onrender.com/notes/${id}`
+          `https://notes-backend-z097.onrender.com/notes/${id}`
         );
         const note = response.data.note;
         setText(note.text);
@@ -43,7 +43,7 @@ export const Update = () => {
       //   data
       // );
       const response = await axios.put(
-        `https://notes-a5k0.onrender.com/notes/${id}`,
+        `https://notes-backend-z097.onrender.com/notes/${id}`,
         data
       );
       toast.success("Note Updated Successfully");

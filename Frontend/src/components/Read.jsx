@@ -16,7 +16,7 @@ export const Read = () => {
       try {
         // const response = await axios.get(`http://localhost:5000/notes/${id}`);
         const response = await axios.get(
-          `https://notes-a5k0.onrender.com/notes/${id}`
+          `https://notes-backend-z097.onrender.com/notes/${id}`
         );
         setNote(response.data.note);
       } catch (error) {
