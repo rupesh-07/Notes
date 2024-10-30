@@ -16,10 +16,10 @@ export const Update = () => {
     const fetchNote = async () => {
       setLoading(true);
       try {
-        // const response = await axios.get(`http://localhost:5000/notes/${id}`);
         const response = await axios.get(
-          `https://notes-backend-z097.onrender.com/notes/${id}`
+          `https://notes-backend-1g8j.onrender.com/notes/${id}`
         );
+
         const note = response.data.note;
         setText(note.text);
         setCategory(note.category);
@@ -38,14 +38,11 @@ export const Update = () => {
 
     try {
       const data = { text, category };
-      // const response = await axios.put(
-      //   `http://localhost:5000/notes/${id}`,
-      //   data
-      // );
       const response = await axios.put(
-        `https://notes-backend-z097.onrender.com/notes/${id}`,
+        `https://notes-backend-1g8j.onrender.com/notes/${id}`,
         data
       );
+
       toast.success("Note Updated Successfully");
       navigate("/");
     } catch (error) {

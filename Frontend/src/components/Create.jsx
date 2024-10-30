@@ -18,11 +18,11 @@ export const Create = () => {
 
     try {
       const data = { text, category };
-      // const response = await axios.post(`http://localhost:5000/notes`, data);
       const response = await axios.post(
-        `https://notes-backend-z097.onrender.com/notes`,
+        `https://notes-backend-1g8j.onrender.com/notes`,
         data
       );
+
       toast.success("Note Created Successfully");
       navigate("/");
     } catch (error) {

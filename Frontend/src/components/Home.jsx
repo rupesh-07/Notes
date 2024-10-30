@@ -19,9 +19,11 @@ export const Home = () => {
     const fetchNotes = async () => {
       try {
         // const response = await axios.get(`http://localhost:5000/notes`);
+
         const response = await axios.get(
-          `https://notes-backend-z097.onrender.com/notes`
+          `https://notes-backend-1g8j.onrender.com/notes`
         );
+
         setNotes(response.data.notes);
       } catch (error) {
         setError("Failed to fetch notes: " + error.message);

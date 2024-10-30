@@ -14,10 +14,10 @@ export const Read = () => {
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        // const response = await axios.get(`http://localhost:5000/notes/${id}`);
         const response = await axios.get(
-          `https://notes-backend-z097.onrender.com/notes/${id}`
+          `https://notes-backend-1g8j.onrender.com/notes/${id}`
         );
+
         setNote(response.data.note);
       } catch (error) {
         setError("Failed to fetch note: " + error.message);

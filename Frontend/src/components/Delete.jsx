@@ -14,7 +14,7 @@ const Delete = () => {
     setLoading(true);
     try {
       const response = await axios.delete(
-        `https://notes-backend-z097.onrender.com/notes/${id}`
+        `https://notes-backend-1g8j.onrender.com/notes/${id}`
       );
       toast.success("Note Deleted Successfully");
       navigate("/");
