@@ -17,7 +17,7 @@ export const Update = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `https://notes-backend-1g8j.onrender.com/notes/${id}`
+          `https://notes-backend-mtbs.onrender.com/notes/${id}`
         );
 
         const note = response.data.note;
@@ -39,7 +39,7 @@ export const Update = () => {
     try {
       const data = { text, category };
       const response = await axios.put(
-        `https://notes-backend-1g8j.onrender.com/notes/${id}`,
+        `https://notes-backend-mtbs.onrender.com/notes/${id}`,
         data
       );
 

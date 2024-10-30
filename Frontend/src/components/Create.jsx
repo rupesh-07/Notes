@@ -19,7 +19,7 @@ export const Create = () => {
     try {
       const data = { text, category };
       const response = await axios.post(
-        `https://notes-backend-1g8j.onrender.com/notes`,
+        `https://notes-backend-mtbs.onrender.com/notes`,
         data
       );
 

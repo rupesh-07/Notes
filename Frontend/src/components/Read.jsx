@@ -15,7 +15,7 @@ export const Read = () => {
     const fetchNote = async () => {
       try {
         const response = await axios.get(
-          `https://notes-backend-1g8j.onrender.com/notes/${id}`
+          `https://notes-backend-mtbs.onrender.com/notes/${id}`
         );
 
         setNote(response.data.note);

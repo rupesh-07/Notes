@@ -21,7 +21,7 @@ export const Home = () => {
         // const response = await axios.get(`http://localhost:5000/notes`);
 
         const response = await axios.get(
-          `https://notes-backend-1g8j.onrender.com/notes`
+          `https://notes-backend-mtbs.onrender.com/notes`
         );
 
         setNotes(response.data.notes);
